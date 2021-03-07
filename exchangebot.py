@@ -59,7 +59,7 @@ def start(update : Update, context : CallbackContext):
 def about(update : Update, context : CallbackContext):
     """ Shows information about the bot """
     send_message = update.message.reply_text
-    send_message("Exchange Bot is a exchange rate informer!\nDeveloped by https://github.com/DevilsGuest/")
+    send_message("Exchange Bot is a exchange rate informer!\nDeveloped by https://github.com/DevilsGuest")
 
 def get_rates_query(update : Update, context : CallbackContext):
     """Get exchange rate info from API\n
@@ -189,3 +189,5 @@ updater.start_polling()
 
 # Blocks incomig texts until a message is recieved by Updater
 updater.idle()
+
+print("Exchange Bot is running...\nDeveloped by https://github.com/DevilsGuest")
