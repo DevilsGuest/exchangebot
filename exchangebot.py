@@ -187,7 +187,8 @@ handler(MessageHandler(Filters.text, message_handler))
 # Starts recieving messages
 updater.start_polling()
 
+# Check if is running
+print("Exchange Bot is running...\nDeveloped by https://github.com/DevilsGuest")
+
 # Blocks incomig texts until a message is recieved by Updater
 updater.idle()
-
-print("Exchange Bot is running...\nDeveloped by https://github.com/DevilsGuest")
